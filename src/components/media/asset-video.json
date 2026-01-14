@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_media_asset_videos",
+  "info": {
+    "displayName": "assetVideo",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "assetVideo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "thumbnailOverlay": {
+      "type": "boolean"
+    },
+    "autoplay": {
+      "type": "boolean"
+    },
+    "schemaImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "schemaTitle": {
+      "type": "string"
+    },
+    "schemaDescription": {
+      "type": "text"
+    },
+    "schemaDate": {
+      "type": "datetime"
+    },
+    "schemaDuration": {
+      "type": "integer"
+    }
+  }
+}

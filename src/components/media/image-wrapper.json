@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_media_image_wrappers",
+  "info": {
+    "displayName": "Image Card",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "taggedMediaBank": {
+      "type": "json"
+    }
+  }
+}

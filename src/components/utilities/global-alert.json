@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_utilities_global_alerts",
+  "info": {
+    "displayName": "globalAlert",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "red",
+        "black",
+        "signature"
+      ],
+      "default": "white"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "expirationTime": {
+      "type": "integer"
+    },
+    "button": {
+      "type": "component",
+      "component": "utilities.button",
+      "repeatable": true
+    }
+  }
+}

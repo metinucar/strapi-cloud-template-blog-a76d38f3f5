@@ -1,0 +1,58 @@
+{
+  "collectionName": "components_data_tech_specs",
+  "info": {
+    "displayName": "Specification",
+    "icon": "cube",
+    "description": "Technical specifications table"
+  },
+  "options": {},
+  "attributes": {
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "white",
+        "gray",
+        "signature",
+        "black",
+        "blue",
+        "frostBlue",
+        "oceanBlue",
+        "peach",
+        "violet",
+        "gradientRadialTopBlueSignature",
+        "gradientRadialCenterBlueSignature",
+        "gradientLinearBlueSignature"
+      ]
+    },
+    "spacing": {
+      "type": "enumeration",
+      "enum": [
+        "onlyTop",
+        "onlyBottom",
+        "both",
+        "none"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "preamble": {
+      "type": "blocks"
+    },
+    "sections": {
+      "type": "component",
+      "component": "data.tech-spec-section",
+      "repeatable": true
+    },
+    "outerSpacing": {
+      "type": "enumeration",
+      "enum": [
+        "outerOnlyTop",
+        "outerOnlyBottom",
+        "outerBoth",
+        "outerNone"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_media_hotspot_items",
+  "info": {
+    "displayName": "hotspotItem",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "white",
+        "gray",
+        "signature",
+        "black",
+        "blue",
+        "frostBlue",
+        "oceanBlue",
+        "peach",
+        "violet",
+        "gradientRadialTopBlueSignature",
+        "gradientRadialCenterBlueSignature",
+        "gradientLinearBlueSignature"
+      ]
+    },
+    "coordinateX": {
+      "type": "json"
+    },
+    "coordinateY": {
+      "type": "json"
+    }
+  }
+}

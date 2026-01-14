@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_navigation_header_sub_navigation_tab_items",
+  "info": {
+    "displayName": "Tab item",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "component": "navigation.header-sub-navigation-panel-item",
+      "repeatable": true
+    }
+  }
+}

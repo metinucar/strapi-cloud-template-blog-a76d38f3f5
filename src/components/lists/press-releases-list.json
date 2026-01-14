@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_lists_press_releases_lists",
+  "info": {
+    "displayName": "pressReleasesList",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {}
+}

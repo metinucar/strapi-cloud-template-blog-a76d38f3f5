@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_downloads_gated_downloadss",
+  "info": {
+    "displayName": "gatedDownloads",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "list": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_heroes_hero_video_smalls",
+  "info": {
+    "displayName": "heroVideoSmall",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "videoThumbnail": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "noOverlay": {
+      "type": "boolean"
+    },
+    "inverted": {
+      "type": "boolean"
+    }
+  }
+}

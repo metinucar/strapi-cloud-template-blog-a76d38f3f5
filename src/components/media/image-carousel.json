@@ -1,0 +1,83 @@
+{
+  "collectionName": "components_media_image_carousels",
+  "info": {
+    "displayName": "imageCarousel",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "effect": {
+      "type": "enumeration",
+      "enum": [
+        "coverflow",
+        "slide"
+      ],
+      "default": "slide"
+    },
+    "carouselWidth": {
+      "type": "enumeration",
+      "enum": [
+        "fluid",
+        "xxWide",
+        "xWide"
+      ],
+      "default": "xWide"
+    },
+    "overlayVisibility": {
+      "type": "boolean"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "buttons": {
+      "type": "component",
+      "component": "utilities.button",
+      "repeatable": true
+    },
+    "items": {
+      "type": "component",
+      "component": "media.carousel-item-image",
+      "repeatable": true
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "white",
+        "gray",
+        "signature",
+        "black",
+        "blue",
+        "frostBlue",
+        "oceanBlue",
+        "peach",
+        "violet",
+        "gradientRadialTopBlueSignature",
+        "gradientRadialCenterBlueSignature",
+        "gradientLinearBlueSignature"
+      ]
+    },
+    "spacing": {
+      "type": "enumeration",
+      "enum": [
+        "onlyTop",
+        "onlyBottom",
+        "both",
+        "none"
+      ]
+    },
+    "outerSpacing": {
+      "type": "enumeration",
+      "enum": [
+        "outerOnlyTop",
+        "outerOnlyBottom",
+        "outerBoth",
+        "outerNone"
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_pages_roots",
+  "info": {
+    "displayName": "root",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "hero": {
+      "type": "json"
+    },
+    "body": {
+      "type": "json"
+    }
+  }
+}

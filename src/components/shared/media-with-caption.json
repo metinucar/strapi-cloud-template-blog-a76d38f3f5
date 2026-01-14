@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_media_with_captions",
+  "info": {
+    "displayName": "Media With Caption",
+    "icon": "picture",
+    "description": "Image or video with optional caption and alt text"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images", "videos"]
+    },
+    "caption": {
+      "type": "text"
+    },
+    "alt": {
+      "type": "string"
+    },
+    "fit": {
+      "type": "enumeration",
+      "enum": ["contain", "cover", "full", "original"],
+      "default": "cover"
+    }
+  }
+}

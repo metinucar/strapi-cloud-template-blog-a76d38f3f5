@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_navigation_header_sub_nav_groups",
+  "info": {
+    "displayName": "headerSubNavGroup",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "titleLink": {
+      "type": "json"
+    },
+    "links": {
+      "type": "component",
+      "component": "navigation.link",
+      "repeatable": true
+    }
+  }
+}

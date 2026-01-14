@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_grids_column_grid_image_items",
+  "info": {
+    "displayName": "Image",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "markdown": {
+      "type": "blocks"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "buttonLink": {
+      "type": "json"
+    },
+    "secondButtonText": {
+      "type": "string"
+    },
+    "secondButtonLink": {
+      "type": "json"
+    },
+    "imageKeepProportions": {
+      "type": "boolean"
+    }
+  }
+}

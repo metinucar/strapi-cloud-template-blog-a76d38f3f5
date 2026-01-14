@@ -1,0 +1,74 @@
+{
+  "collectionName": "components_features_segmentss",
+  "info": {
+    "displayName": "Segments",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "white",
+        "gray",
+        "signature",
+        "black",
+        "blue",
+        "frostBlue",
+        "oceanBlue",
+        "peach",
+        "violet",
+        "gradientRadialTopBlueSignature",
+        "gradientRadialCenterBlueSignature",
+        "gradientLinearBlueSignature"
+      ]
+    },
+    "contentAlignment": {
+      "type": "enumeration",
+      "enum": [
+        "alignLeft",
+        "alignCenter",
+        "alignRight"
+      ]
+    },
+    "innerSpacing": {
+      "type": "enumeration",
+      "enum": [
+        "onlyTop",
+        "onlyBottom",
+        "both",
+        "none"
+      ]
+    },
+    "outerSpacing": {
+      "type": "enumeration",
+      "enum": [
+        "outerOnlyTop",
+        "outerOnlyBottom",
+        "outerBoth",
+        "outerNone"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "buttons": {
+      "type": "component",
+      "component": "utilities.button",
+      "repeatable": true
+    },
+    "items": {
+      "type": "component",
+      "component": "features.segments-item",
+      "repeatable": true
+    },
+    "blocks": {
+      "type": "json"
+    }
+  }
+}

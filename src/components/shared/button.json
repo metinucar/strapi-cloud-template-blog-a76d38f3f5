@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_buttons",
+  "info": {
+    "displayName": "Button",
+    "icon": "cursor",
+    "description": "Reusable button with link and style options"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "link": {
+      "type": "component",
+      "component": "shared.link"
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": ["default", "primary", "secondary", "cta", "inverted", "outline"],
+      "default": "default"
+    }
+  }
+}

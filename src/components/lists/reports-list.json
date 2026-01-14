@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_lists_reports_lists",
+  "info": {
+    "displayName": "reportsList",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {}
+}

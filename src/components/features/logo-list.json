@@ -1,0 +1,70 @@
+{
+  "collectionName": "components_features_logo_lists",
+  "info": {
+    "displayName": "logoList",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "headingSize": {
+      "type": "enumeration",
+      "enum": [
+        "xxs",
+        "xs",
+        "small",
+        "medium",
+        "large"
+      ],
+      "default": "medium"
+    },
+    "logoSize": {
+      "type": "enumeration",
+      "enum": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "default": "medium"
+    },
+    "logoStyle": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "grayscale",
+        "blackAndWhite"
+      ],
+      "default": "default"
+    },
+    "logoOpacity": {
+      "type": "json"
+    },
+    "transparentLogoBackground": {
+      "type": "boolean"
+    },
+    "scrollOnDesktop": {
+      "type": "boolean"
+    },
+    "spacing": {
+      "type": "enumeration",
+      "enum": [
+        "onlyTop",
+        "onlyBottom",
+        "both",
+        "none"
+      ],
+      "default": "both"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "logos": {
+      "type": "component",
+      "component": "features.logo",
+      "repeatable": true
+    }
+  }
+}

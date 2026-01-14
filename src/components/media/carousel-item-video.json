@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_media_carousel_item_videos",
+  "info": {
+    "displayName": "carouselItemVideo",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "white",
+        "gray",
+        "signature",
+        "black",
+        "blue",
+        "frostBlue",
+        "oceanBlue",
+        "peach",
+        "violet",
+        "gradientRadialTopBlueSignature",
+        "gradientRadialCenterBlueSignature",
+        "gradientLinearBlueSignature"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "video": {
+      "type": "json"
+    }
+  }
+}

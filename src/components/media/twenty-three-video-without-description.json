@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_media_twenty_three_video_without_descriptions",
+  "info": {
+    "displayName": "twentyThreeVideoWithoutDescription",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "schemaImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "schemaTitle": {
+      "type": "string"
+    },
+    "schemaDescription": {
+      "type": "text"
+    },
+    "schemaDate": {
+      "type": "datetime"
+    },
+    "schemaDuration": {
+      "type": "integer"
+    },
+    "url": {
+      "type": "string"
+    },
+    "disableReplay": {
+      "type": "boolean"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "thumbnailOverlay": {
+      "type": "boolean"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "startTime": {
+      "type": "string"
+    },
+    "autoplay": {
+      "type": "boolean"
+    }
+  }
+}

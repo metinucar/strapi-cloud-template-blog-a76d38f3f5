@@ -1,0 +1,110 @@
+{
+  "collectionName": "components_pages_resource_pages",
+  "info": {
+    "displayName": "Resource Page",
+    "icon": "file",
+    "description": "Page template"
+  },
+  "options": {},
+  "attributes": {
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "heroTitle": {
+      "type": "string"
+    },
+    "heroPreamble": {
+      "type": "text"
+    },
+    "heroDate": {
+      "type": "datetime"
+    },
+    "callToActionText": {
+      "type": "string"
+    },
+    "heroButtons": {
+      "type": "component",
+      "component": "utilities.button",
+      "repeatable": true
+    },
+    "noHeroOverlay": {
+      "type": "boolean"
+    },
+    "event": {
+      "type": "string"
+    },
+    "details": {
+      "type": "component",
+      "component": "events.detail",
+      "repeatable": true
+    },
+    "editorial": {
+      "type": "component",
+      "component": "content.editorial",
+      "repeatable": true
+    },
+    "agendaTitle": {
+      "type": "string"
+    },
+    "agenda": {
+      "type": "component",
+      "component": "events.agenda-item",
+      "repeatable": true
+    },
+    "callToActionSection": {
+      "type": "json"
+    },
+    "speakersv2Title": {
+      "type": "string"
+    },
+    "speakersv2": {
+      "type": "json"
+    },
+    "speakers": {
+      "type": "component",
+      "component": "people.speakers",
+      "repeatable": true
+    },
+    "contentGrid": {
+      "type": "component",
+      "component": "grids.content-grid-slider",
+      "repeatable": true
+    },
+    "resourceType": {
+      "type": "json"
+    },
+    "taggedProducts": {
+      "type": "json"
+    },
+    "taggedSolutions": {
+      "type": "json"
+    },
+    "hideBreadcrumbs": {
+      "type": "boolean"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo"
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "collectionName": "components_pages_event_pages",
+  "info": {
+    "displayName": "[Investor] Event Page",
+    "icon": "file",
+    "description": "Event detail page template"
+  },
+  "options": {},
+  "attributes": {
+    "seoMeta": {
+      "type": "json"
+    },
+    "contacts": {
+      "type": "component",
+      "component": "people.contact",
+      "repeatable": true
+    },
+    "eventDate": {
+      "type": "datetime"
+    },
+    "eventLocation": {
+      "type": "string"
+    },
+    "eventAvailability": {
+      "type": "enumeration",
+      "enum": [
+        "online",
+        "hybrid",
+        "physical"
+      ]
+    },
+    "details": {
+      "type": "component",
+      "component": "events.detail",
+      "repeatable": true
+    },
+    "relatedDocuments": {
+      "type": "component",
+      "component": "downloads.document",
+      "repeatable": true
+    },
+    "editorial": {
+      "type": "component",
+      "component": "content.editorial",
+      "repeatable": true
+    },
+    "callToActionSection": {
+      "type": "json"
+    },
+    "contentGrid": {
+      "type": "json"
+    },
+    "agendaTitle": {
+      "type": "string"
+    },
+    "agenda": {
+      "type": "component",
+      "component": "events.agenda-item",
+      "repeatable": true
+    },
+    "eventType": {
+      "type": "json"
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "heroTitle": {
+      "type": "string"
+    },
+    "heroPreamble": {
+      "type": "text"
+    },
+    "heroButtons": {
+      "type": "component",
+      "component": "utilities.button",
+      "repeatable": true
+    },
+    "callToActionText": {
+      "type": "string"
+    },
+    "noHeroOverlay": {
+      "type": "boolean"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "hideBreadcrumbs": {
+      "type": "boolean"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo"
+    }
+  }
+}

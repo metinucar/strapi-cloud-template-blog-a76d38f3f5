@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_finders_product_finder_pages",
+  "info": {
+    "displayName": "productFinderPage",
+    "icon": "file",
+    "description": "Page template"
+  },
+  "options": {},
+  "attributes": {
+    "activateSearchField": {
+      "type": "boolean"
+    },
+    "hero": {
+      "type": "json"
+    },
+    "body": {
+      "type": "json"
+    },
+    "hideBreadcrumbs": {
+      "type": "boolean"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo"
+    }
+  }
+}

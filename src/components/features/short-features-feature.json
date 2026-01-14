@@ -1,0 +1,56 @@
+{
+  "collectionName": "components_features_short_features_features",
+  "info": {
+    "displayName": "shortFeaturesFeature",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "showLabel": {
+      "type": "boolean"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "iconColor": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "white",
+        "gray",
+        "signature",
+        "black",
+        "blue",
+        "frostBlue",
+        "oceanBlue",
+        "peach",
+        "violet",
+        "gradientRadialTopBlueSignature",
+        "gradientRadialCenterBlueSignature",
+        "gradientLinearBlueSignature"
+      ]
+    },
+    "labelPrefix": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "labelSuffix": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "buttonLink": {
+      "type": "json"
+    }
+  }
+}

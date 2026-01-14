@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_media_sliders",
+  "info": {
+    "displayName": "slider",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "paginationOptions": {
+      "type": "enumeration",
+      "enum": [
+        "pagination",
+        "paginationEllipsis",
+        "none"
+      ],
+      "default": "pagination"
+    },
+    "contentPosition": {
+      "type": "enumeration",
+      "enum": [
+        "center",
+        "left"
+      ],
+      "default": "left"
+    },
+    "slides": {
+      "type": "json"
+    },
+    "arrowNavigationVisibility": {
+      "type": "boolean"
+    }
+  }
+}

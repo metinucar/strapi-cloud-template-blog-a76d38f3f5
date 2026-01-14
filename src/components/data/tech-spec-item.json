@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_data_tech_spec_items",
+  "info": {
+    "displayName": "Item",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "feature": {
+      "type": "blocks"
+    },
+    "specification": {
+      "type": "blocks"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "collectionName": "components_media_slide_item_images",
+  "info": {
+    "displayName": "Image",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "titleType": {
+      "type": "enumeration",
+      "enum": [
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        "p"
+      ],
+      "default": "h3"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "buttons": {
+      "type": "component",
+      "component": "utilities.button",
+      "repeatable": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "paginationTitle": {
+      "type": "string"
+    },
+    "inverted": {
+      "type": "boolean"
+    },
+    "overlay": {
+      "type": "enumeration",
+      "enum": [
+        "overlayNone",
+        "overlay01",
+        "overlay02",
+        "overlay03"
+      ],
+      "default": "overlayNone"
+    }
+  }
+}

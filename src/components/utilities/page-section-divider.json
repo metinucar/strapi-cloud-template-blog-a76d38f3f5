@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_utilities_page_section_dividers",
+  "info": {
+    "displayName": "pageSectionDivider",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "itemId": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_data_financial_reports_tables",
+  "info": {
+    "displayName": "financialReportsTable",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "spacing": {
+      "type": "enumeration",
+      "enum": [
+        "onlyTop",
+        "onlyBottom",
+        "both",
+        "none"
+      ],
+      "default": "both"
+    },
+    "title": {
+      "type": "string"
+    },
+    "sections": {
+      "type": "component",
+      "component": "data.financial-report-section",
+      "repeatable": true
+    }
+  }
+}

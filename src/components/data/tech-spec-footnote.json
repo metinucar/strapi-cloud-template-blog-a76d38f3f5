@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_data_tech_spec_footnotes",
+  "info": {
+    "displayName": "techSpecFootnote",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "blocks"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_data_financial_report_sections",
+  "info": {
+    "displayName": "FinancialReportSection",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "year": {
+      "type": "string"
+    },
+    "features": {
+      "type": "component",
+      "component": "data.financial-reports-item",
+      "repeatable": true
+    }
+  }
+}

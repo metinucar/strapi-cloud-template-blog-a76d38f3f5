@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_utilities_buttons",
+  "info": {
+    "displayName": "button",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "buttonText": {
+      "type": "string"
+    },
+    "buttonLink": {
+      "type": "json"
+    },
+    "buttonType": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "inverted",
+        "cta"
+      ],
+      "default": "default"
+    }
+  }
+}

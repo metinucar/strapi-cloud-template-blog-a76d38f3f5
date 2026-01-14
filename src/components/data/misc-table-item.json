@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_data_misc_table_items",
+  "info": {
+    "displayName": "MiscTableItem",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "document": {
+      "type": "component",
+      "component": "downloads.document",
+      "repeatable": true
+    }
+  }
+}

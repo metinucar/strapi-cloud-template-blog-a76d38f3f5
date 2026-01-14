@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_features_logos",
+  "info": {
+    "displayName": "logo",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

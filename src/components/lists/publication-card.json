@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_lists_publication_cards",
+  "info": {
+    "displayName": "Publication",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "itemId": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "abstract": {
+      "type": "text"
+    },
+    "doi": {
+      "type": "string"
+    },
+    "authors": {
+      "type": "string"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "sourceTitle": {
+      "type": "string"
+    },
+    "productTags": {
+      "type": "string"
+    },
+    "fieldOfResearchTags": {
+      "type": "string"
+    }
+  }
+}

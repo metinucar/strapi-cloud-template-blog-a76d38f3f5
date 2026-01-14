@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_grids_column_grid_text_items",
+  "info": {
+    "displayName": "columnGridTextItem",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "markdown": {
+      "type": "blocks"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "buttonLink": {
+      "type": "json"
+    },
+    "secondButtonText": {
+      "type": "string"
+    },
+    "secondButtonLink": {
+      "type": "json"
+    }
+  }
+}

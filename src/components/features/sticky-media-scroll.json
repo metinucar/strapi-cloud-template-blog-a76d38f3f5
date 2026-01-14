@@ -1,0 +1,61 @@
+{
+  "collectionName": "components_features_sticky_media_scrolls",
+  "info": {
+    "displayName": "stickyMediaScroll",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "layout_1",
+        "layout_2",
+        "layout_3",
+        "layout_4"
+      ],
+      "default": "layout_2"
+    },
+    "extendMediaToEdge": {
+      "type": "boolean"
+    },
+    "introContentAlignment": {
+      "type": "enumeration",
+      "enum": [
+        "alignLeft",
+        "alignCenter",
+        "alignRight"
+      ]
+    },
+    "innerSpacing": {
+      "type": "enumeration",
+      "enum": [
+        "onlyTop",
+        "onlyBottom",
+        "both",
+        "none"
+      ]
+    },
+    "outerSpacing": {
+      "type": "enumeration",
+      "enum": [
+        "outerOnlyTop",
+        "outerOnlyBottom",
+        "outerBoth",
+        "outerNone"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "steps": {
+      "type": "component",
+      "component": "features.sticky-media-scroll-step",
+      "repeatable": true
+    }
+  }
+}

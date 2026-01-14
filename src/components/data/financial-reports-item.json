@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_data_financial_reports_items",
+  "info": {
+    "displayName": "FinancialReportsItem",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "quarter": {
+      "type": "string"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "report": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "texts"
+      ]
+    },
+    "presentation": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "texts"
+      ]
+    },
+    "webcast": {
+      "type": "json"
+    },
+    "link": {
+      "type": "json"
+    },
+    "transcript": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "texts"
+      ]
+    }
+  }
+}

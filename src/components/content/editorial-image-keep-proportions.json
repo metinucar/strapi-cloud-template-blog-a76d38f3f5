@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_content_editorial_image_keep_proportionss",
+  "info": {
+    "displayName": "editorialImageKeepProportions",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "caption": {
+      "type": "string"
+    },
+    "narrow": {
+      "type": "boolean"
+    },
+    "link": {
+      "type": "json"
+    },
+    "linkTarget": {
+      "type": "boolean"
+    },
+    "linkTitle": {
+      "type": "string"
+    }
+  }
+}

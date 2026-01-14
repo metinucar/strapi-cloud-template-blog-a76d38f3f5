@@ -1,0 +1,74 @@
+{
+  "collectionName": "components_cta_cta_blocks",
+  "info": {
+    "displayName": "ctaBlock",
+    "icon": "cube",
+    "description": "Call-to-action block with title and buttons"
+  },
+  "options": {},
+  "attributes": {
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "white",
+        "gray",
+        "signature",
+        "black",
+        "blue",
+        "frostBlue",
+        "oceanBlue",
+        "peach",
+        "violet",
+        "gradientRadialTopBlueSignature",
+        "gradientRadialCenterBlueSignature",
+        "gradientLinearBlueSignature"
+      ]
+    },
+    "spacing": {
+      "type": "enumeration",
+      "enum": [
+        "onlyTop",
+        "onlyBottom",
+        "both",
+        "none"
+      ]
+    },
+    "outerSpacing": {
+      "type": "enumeration",
+      "enum": [
+        "outerOnlyTop",
+        "outerOnlyBottom",
+        "outerBoth",
+        "outerNone"
+      ]
+    },
+    "width": {
+      "type": "enumeration",
+      "enum": [
+        "fluid",
+        "wide",
+        "narrow"
+      ],
+      "default": "narrow"
+    },
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "buttonLink": {
+      "type": "json"
+    },
+    "secondButtonText": {
+      "type": "string"
+    },
+    "secondButtonLink": {
+      "type": "json"
+    }
+  }
+}

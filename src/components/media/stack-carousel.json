@@ -1,0 +1,52 @@
+{
+  "collectionName": "components_media_stack_carousels",
+  "info": {
+    "displayName": "stackCarousel",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "buttons": {
+      "type": "component",
+      "component": "utilities.button",
+      "repeatable": true
+    },
+    "spacing": {
+      "type": "enumeration",
+      "enum": [
+        "onlyTop",
+        "onlyBottom",
+        "both",
+        "none"
+      ]
+    },
+    "outerSpacing": {
+      "type": "enumeration",
+      "enum": [
+        "outerOnlyTop",
+        "outerOnlyBottom",
+        "outerBoth",
+        "outerNone"
+      ]
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "layout11",
+        "layout12",
+        "layout21"
+      ],
+      "default": "layout11"
+    },
+    "stackingItems": {
+      "type": "json"
+    }
+  }
+}

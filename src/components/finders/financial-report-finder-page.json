@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_finders_financial_report_finder_pages",
+  "info": {
+    "displayName": "financialReportFinderPage",
+    "icon": "file",
+    "description": "Page template"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "activateSearchField": {
+      "type": "boolean"
+    },
+    "hero": {
+      "type": "json"
+    },
+    "body": {
+      "type": "json"
+    },
+    "hideBreadcrumbs": {
+      "type": "boolean"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo"
+    }
+  }
+}

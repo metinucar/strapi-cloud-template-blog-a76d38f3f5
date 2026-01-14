@@ -1,0 +1,82 @@
+{
+  "collectionName": "components_grids_column_grid_text_onlys",
+  "info": {
+    "displayName": "columnGridTextOnly",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "white",
+        "gray",
+        "signature",
+        "black",
+        "blue",
+        "frostBlue",
+        "oceanBlue",
+        "peach",
+        "violet",
+        "gradientRadialTopBlueSignature",
+        "gradientRadialCenterBlueSignature",
+        "gradientLinearBlueSignature"
+      ]
+    },
+    "width": {
+      "type": "enumeration",
+      "enum": [
+        "fluid",
+        "wide"
+      ],
+      "default": "fluid"
+    },
+    "spacing": {
+      "type": "enumeration",
+      "enum": [
+        "onlyTop",
+        "onlyBottom",
+        "both",
+        "none"
+      ],
+      "default": "both"
+    },
+    "outerSpacing": {
+      "type": "enumeration",
+      "enum": [
+        "outerOnlyTop",
+        "outerOnlyBottom",
+        "outerBoth",
+        "outerNone"
+      ],
+      "default": "outerNone"
+    },
+    "centered": {
+      "type": "boolean"
+    },
+    "twoColumns": {
+      "type": "boolean"
+    },
+    "inverted": {
+      "type": "boolean"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "buttons": {
+      "type": "component",
+      "component": "utilities.button",
+      "repeatable": true
+    },
+    "items": {
+      "type": "component",
+      "component": "grids.column-grid-text-item",
+      "repeatable": true
+    }
+  }
+}

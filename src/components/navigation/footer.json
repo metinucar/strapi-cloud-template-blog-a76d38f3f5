@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_navigation_footers",
+  "info": {
+    "displayName": "footer",
+    "icon": "cube",
+    "description": "Site footer with links and social"
+  },
+  "options": {},
+  "attributes": {
+    "socialMediaTitle": {
+      "type": "string"
+    },
+    "socialMediaList": {
+      "type": "json"
+    },
+    "linkListBTitle": {
+      "type": "string"
+    },
+    "linkListB": {
+      "type": "component",
+      "component": "navigation.link",
+      "repeatable": true
+    },
+    "linkListATitle": {
+      "type": "string"
+    },
+    "linkListA": {
+      "type": "component",
+      "component": "navigation.link",
+      "repeatable": true
+    },
+    "privacyPolicyLink": {
+      "type": "json"
+    },
+    "privacyPolicyText": {
+      "type": "string"
+    },
+    "termsOfUseLink": {
+      "type": "json"
+    },
+    "termsOfUseText": {
+      "type": "string"
+    },
+    "searchPageLink": {
+      "type": "json"
+    },
+    "contactPageLink": {
+      "type": "json"
+    }
+  }
+}

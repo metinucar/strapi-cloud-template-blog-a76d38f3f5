@@ -1,0 +1,57 @@
+{
+  "collectionName": "components_finders_article_finder_page_v2s",
+  "info": {
+    "displayName": "articleFinderPageV2",
+    "icon": "file",
+    "description": "Page template"
+  },
+  "options": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "component": "heroes.hero-small",
+      "repeatable": true
+    },
+    "featuredArticle": {
+      "type": "string"
+    },
+    "editorsPick": {
+      "type": "string"
+    },
+    "mostPopular": {
+      "type": "string"
+    },
+    "highlight": {
+      "type": "string"
+    },
+    "body": {
+      "type": "json"
+    },
+    "hideStickyMenu": {
+      "type": "boolean"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "activateSearchField": {
+      "type": "boolean"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo"
+    }
+  }
+}

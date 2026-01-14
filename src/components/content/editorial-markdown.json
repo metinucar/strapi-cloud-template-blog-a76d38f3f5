@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_content_editorial_markdowns",
+  "info": {
+    "displayName": "editorialMarkdown",
+    "icon": "cube",
+    "description": "Markdown-based editorial content"
+  },
+  "options": {},
+  "attributes": {
+    "markdown": {
+      "type": "blocks"
+    }
+  }
+}

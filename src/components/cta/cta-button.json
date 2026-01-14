@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_cta_cta_buttons",
+  "info": {
+    "displayName": "ctaButton",
+    "icon": "cube",
+    "description": "Simple call-to-action button"
+  },
+  "options": {},
+  "attributes": {
+    "buttonText": {
+      "type": "string"
+    },
+    "buttonLink": {
+      "type": "json"
+    }
+  }
+}

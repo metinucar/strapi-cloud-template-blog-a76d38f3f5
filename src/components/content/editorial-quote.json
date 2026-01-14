@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_content_editorial_quotes",
+  "info": {
+    "displayName": "editorialQuote",
+    "icon": "cube",
+    "description": "Quote block within editorial"
+  },
+  "options": {},
+  "attributes": {
+    "quote": {
+      "type": "text"
+    },
+    "quotee": {
+      "type": "string"
+    }
+  }
+}

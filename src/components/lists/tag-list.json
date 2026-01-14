@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_lists_tag_lists",
+  "info": {
+    "displayName": "tagList",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "component",
+      "component": "lists.tag",
+      "repeatable": true
+    }
+  }
+}

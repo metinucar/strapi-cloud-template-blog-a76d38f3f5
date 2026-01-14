@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_media_youtube_videos",
+  "info": {
+    "displayName": "youtubeVideo",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "schemaTitle": {
+      "type": "string"
+    },
+    "schemaDescription": {
+      "type": "text"
+    },
+    "schemaDate": {
+      "type": "datetime"
+    },
+    "schemaDuration": {
+      "type": "integer"
+    },
+    "url": {
+      "type": "string"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "thumbnailOverlay": {
+      "type": "boolean"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "startTime": {
+      "type": "string"
+    },
+    "autoplay": {
+      "type": "boolean"
+    }
+  }
+}

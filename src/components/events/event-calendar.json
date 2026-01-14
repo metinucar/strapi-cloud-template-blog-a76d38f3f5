@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_events_event_calendars",
+  "info": {
+    "displayName": "eventCalendar",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "preamble": {
+      "type": "string"
+    },
+    "eventTypes": {
+      "type": "json"
+    },
+    "eventDisplay": {
+      "type": "enumeration",
+      "enum": [
+        "future_events",
+        "past_events"
+      ],
+      "default": "future_events"
+    },
+    "buttons": {
+      "type": "component",
+      "component": "utilities.button",
+      "repeatable": true
+    }
+  }
+}

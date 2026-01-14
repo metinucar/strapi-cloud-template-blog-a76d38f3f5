@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_navigation_footer_social_media_items",
+  "info": {
+    "displayName": "Item",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "link": {
+      "type": "json"
+    }
+  }
+}

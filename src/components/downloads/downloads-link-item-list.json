@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_downloads_downloads_link_item_lists",
+  "info": {
+    "displayName": "downloadsLinkItemList",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "json"
+    }
+  }
+}

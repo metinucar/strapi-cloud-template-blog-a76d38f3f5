@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_utilities_share_items",
+  "info": {
+    "displayName": "shareItem",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "link": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "collectionName": "components_heroes_hero_startpages",
+  "info": {
+    "displayName": "heroStartpage",
+    "icon": "cube",
+    "description": "Homepage hero with featured content"
+  },
+  "options": {},
+  "attributes": {
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "mobileVideo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "fallbackImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "label": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "buttons": {
+      "type": "component",
+      "component": "utilities.button",
+      "repeatable": true
+    },
+    "hideContentOnMobile": {
+      "type": "boolean"
+    },
+    "hideContentOnDesktop": {
+      "type": "boolean"
+    },
+    "inverted": {
+      "type": "boolean"
+    },
+    "noOverlay": {
+      "type": "boolean"
+    },
+    "divider": {
+      "type": "boolean"
+    }
+  }
+}

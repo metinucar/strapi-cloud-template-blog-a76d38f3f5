@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_data_comparison_table_rows",
+  "info": {
+    "displayName": "Row",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "feature": {
+      "type": "string"
+    },
+    "columns": {
+      "type": "component",
+      "component": "data.comparison-table-row-colum",
+      "repeatable": true
+    }
+  }
+}

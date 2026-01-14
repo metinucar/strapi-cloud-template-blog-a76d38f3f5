@@ -1,0 +1,58 @@
+{
+  "collectionName": "components_content_preambles",
+  "info": {
+    "displayName": "preamble",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "featured": {
+      "type": "boolean",
+      "default": true
+    },
+    "contentAlignment": {
+      "type": "enumeration",
+      "enum": [
+        "alignLeft",
+        "alignCenter",
+        "alignRight"
+      ]
+    },
+    "innerSpacing": {
+      "type": "enumeration",
+      "enum": [
+        "onlyTop",
+        "onlyBottom",
+        "both",
+        "none"
+      ]
+    },
+    "noBottomPadding": {
+      "type": "boolean"
+    },
+    "noTopPadding": {
+      "type": "boolean"
+    },
+    "title": {
+      "type": "string"
+    },
+    "titleType": {
+      "type": "enumeration",
+      "enum": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ]
+    },
+    "text": {
+      "type": "blocks"
+    },
+    "buttons": {
+      "type": "component",
+      "component": "utilities.button",
+      "repeatable": true
+    }
+  }
+}

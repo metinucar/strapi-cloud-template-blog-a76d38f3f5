@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_pages_blanks",
+  "info": {
+    "displayName": "Blank",
+    "icon": "file",
+    "description": "Page template"
+  },
+  "options": {},
+  "attributes": {}
+}

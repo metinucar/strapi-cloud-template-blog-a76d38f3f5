@@ -1,0 +1,71 @@
+{
+  "collectionName": "components_features_customer_casess",
+  "info": {
+    "displayName": "customerCases",
+    "icon": "cube",
+    "description": "Customer case studies showcase"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "buttons": {
+      "type": "component",
+      "component": "utilities.button",
+      "repeatable": true
+    },
+    "cases": {
+      "type": "component",
+      "component": "features.customer-cases-item",
+      "repeatable": true
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "white",
+        "gray",
+        "signature",
+        "black",
+        "blue",
+        "frostBlue",
+        "oceanBlue",
+        "peach",
+        "violet",
+        "gradientRadialTopBlueSignature",
+        "gradientRadialCenterBlueSignature",
+        "gradientLinearBlueSignature"
+      ]
+    },
+    "contentAlignment": {
+      "type": "enumeration",
+      "enum": [
+        "alignLeft",
+        "alignCenter",
+        "alignRight"
+      ]
+    },
+    "innerSpacing": {
+      "type": "enumeration",
+      "enum": [
+        "onlyTop",
+        "onlyBottom",
+        "both",
+        "none"
+      ]
+    },
+    "outerSpacing": {
+      "type": "enumeration",
+      "enum": [
+        "outerOnlyTop",
+        "outerOnlyBottom",
+        "outerBoth",
+        "outerNone"
+      ]
+    }
+  }
+}

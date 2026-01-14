@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_lists_tags",
+  "info": {
+    "displayName": "tag",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "tag": {
+      "type": "string"
+    },
+    "link": {
+      "type": "json"
+    }
+  }
+}

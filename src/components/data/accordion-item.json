@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_data_accordion_items",
+  "info": {
+    "displayName": "accordionItem",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    }
+  }
+}

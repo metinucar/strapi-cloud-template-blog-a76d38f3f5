@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_features_testimonialss",
+  "info": {
+    "displayName": "testimonials",
+    "icon": "cube",
+    "description": "Customer testimonials carousel"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "testimonials": {
+      "type": "component",
+      "component": "features.testimonial",
+      "repeatable": true
+    },
+    "spacing": {
+      "type": "enumeration",
+      "enum": [
+        "onlyTop",
+        "onlyBottom",
+        "both",
+        "none"
+      ]
+    }
+  }
+}

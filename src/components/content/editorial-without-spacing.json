@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_content_editorial_without_spacings",
+  "info": {
+    "displayName": "editorialWithoutSpacing",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "body": {
+      "type": "json"
+    }
+  }
+}

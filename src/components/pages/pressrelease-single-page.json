@@ -1,0 +1,88 @@
+{
+  "collectionName": "components_pages_pressrelease_single_pages",
+  "info": {
+    "displayName": "Press release",
+    "icon": "file",
+    "description": "Page template"
+  },
+  "options": {},
+  "attributes": {
+    "seoMeta": {
+      "type": "json"
+    },
+    "publishDate": {
+      "type": "datetime"
+    },
+    "lastChangeDate": {
+      "type": "datetime"
+    },
+    "pageTitle": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "component",
+      "component": "content.editorial-markdown",
+      "repeatable": true
+    },
+    "body": {
+      "type": "json"
+    },
+    "files": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": []
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "videos": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": []
+    },
+    "categories": {
+      "type": "json"
+    },
+    "contacts": {
+      "type": "json"
+    },
+    "hideBreadcrumbs": {
+      "type": "boolean"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "category": {
+      "type": "string"
+    },
+    "cisionId": {
+      "type": "string"
+    },
+    "translationId": {
+      "type": "string"
+    },
+    "complete": {
+      "type": "component",
+      "component": "content.editorial-markdown",
+      "repeatable": true
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo"
+    }
+  }
+}

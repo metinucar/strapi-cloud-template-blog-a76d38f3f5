@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_navigation_header_sub_navigation_panel_items",
+  "info": {
+    "displayName": "Panel",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "json"
+    },
+    "cta": {
+      "type": "component",
+      "component": "navigation.header-sub-navigation-cta",
+      "repeatable": true
+    },
+    "sidebar": {
+      "type": "component",
+      "component": "navigation.header-sub-navigation-sidebar",
+      "repeatable": true
+    },
+    "body": {
+      "type": "component",
+      "component": "navigation.header-sub-navigation-group",
+      "repeatable": true
+    }
+  }
+}

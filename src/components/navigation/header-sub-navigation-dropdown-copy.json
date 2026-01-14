@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_navigation_header_sub_navigation_dropdown_copys",
+  "info": {
+    "displayName": "Dropdown",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "component": "navigation.header-sub-navigation-item",
+      "repeatable": true
+    }
+  }
+}

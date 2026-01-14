@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_people_speakerss",
+  "info": {
+    "displayName": "speakers",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "speakers": {
+      "type": "component",
+      "component": "people.speakers-speaker",
+      "repeatable": true
+    }
+  }
+}

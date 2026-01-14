@@ -1,0 +1,128 @@
+{
+  "collectionName": "components_content_text_and_images",
+  "info": {
+    "displayName": "textAndImage",
+    "icon": "cube",
+    "description": "Two-column text and image layout"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "blocks"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "buttonLink": {
+      "type": "json"
+    },
+    "secondButtonText": {
+      "type": "string"
+    },
+    "secondButtonLink": {
+      "type": "json"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "layout11",
+        "layout1g1",
+        "layout12",
+        "layout1g2",
+        "layout21",
+        "layout2g1"
+      ],
+      "default": "layout11"
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "white",
+        "gray",
+        "signature",
+        "black",
+        "blue",
+        "frostBlue",
+        "oceanBlue",
+        "peach",
+        "violet",
+        "gradientRadialTopBlueSignature",
+        "gradientRadialCenterBlueSignature",
+        "gradientLinearBlueSignature"
+      ]
+    },
+    "outerSpacing": {
+      "type": "enumeration",
+      "enum": [
+        "outerOnlyTop",
+        "outerOnlyBottom",
+        "outerBoth",
+        "outerNone"
+      ],
+      "default": "outerNone"
+    },
+    "mediaBackground": {
+      "type": "enumeration",
+      "enum": [
+        "mediaBgWhite",
+        "mediaBgGray",
+        "mediaBgSignature",
+        "mediaBgBlack",
+        "mediaBgLitterbox"
+      ],
+      "default": "mediaBgWhite"
+    },
+    "imageKeepProportions": {
+      "type": "boolean"
+    },
+    "reversed": {
+      "type": "boolean"
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "typeformCopy": {
+      "type": "string"
+    },
+    "typeformID": {
+      "type": "string"
+    },
+    "typeformSize": {
+      "type": "enumeration",
+      "enum": [
+        "50",
+        "60",
+        "70",
+        "80",
+        "90",
+        "100"
+      ],
+      "default": "70"
+    },
+    "typeformButtonStyle": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "cta",
+        "inverted"
+      ],
+      "default": "default"
+    },
+    "buttons": {
+      "type": "component",
+      "component": "utilities.button",
+      "repeatable": true
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_navigation_header_nav_items",
+  "info": {
+    "displayName": "headerNavItem",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subNavGroups": {
+      "type": "json"
+    },
+    "subNavGridLayout": {
+      "type": "enumeration",
+      "enum": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "default": "1"
+    },
+    "titleLink": {
+      "type": "json"
+    }
+  }
+}

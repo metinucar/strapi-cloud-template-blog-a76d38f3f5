@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_content_editorial_images",
+  "info": {
+    "displayName": "editorialImage",
+    "icon": "cube",
+    "description": "Image block within editorial"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "link": {
+      "type": "json"
+    },
+    "linkTarget": {
+      "type": "boolean"
+    },
+    "linkTitle": {
+      "type": "string"
+    },
+    "wide": {
+      "type": "boolean"
+    },
+    "caption": {
+      "type": "string"
+    }
+  }
+}

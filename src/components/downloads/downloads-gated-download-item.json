@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_downloads_downloads_gated_download_items",
+  "info": {
+    "displayName": "downloadsGatedDownloadItem",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "externalFileUrl": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "form": {
+      "type": "component",
+      "component": "cta.cta-form",
+      "repeatable": true
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": []
+    }
+  }
+}

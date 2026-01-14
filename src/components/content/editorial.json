@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_content_editorials",
+  "info": {
+    "displayName": "editorial",
+    "icon": "cube",
+    "description": "Rich content section with mixed media"
+  },
+  "options": {},
+  "attributes": {
+    "body": {
+      "type": "json"
+    },
+    "spacing": {
+      "type": "enumeration",
+      "enum": [
+        "onlyTop",
+        "onlyBottom",
+        "both",
+        "none"
+      ],
+      "default": "Both"
+    }
+  }
+}

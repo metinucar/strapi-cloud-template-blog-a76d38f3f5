@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_media_videos",
+  "info": {
+    "displayName": "video",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "video": {
+      "type": "json"
+    }
+  }
+}

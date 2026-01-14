@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_spacings",
+  "info": {
+    "displayName": "Spacing",
+    "icon": "layout",
+    "description": "Reusable spacing and width configuration"
+  },
+  "options": {},
+  "attributes": {
+    "inner": {
+      "type": "enumeration",
+      "enum": ["none", "onlyTop", "onlyBottom", "both"],
+      "default": "none"
+    },
+    "outer": {
+      "type": "enumeration",
+      "enum": ["outerNone", "outerOnlyTop", "outerOnlyBottom", "outerBoth"],
+      "default": "outerNone"
+    },
+    "width": {
+      "type": "enumeration",
+      "enum": ["fluid", "wide", "narrow", "xWide"],
+      "default": "wide"
+    }
+  }
+}

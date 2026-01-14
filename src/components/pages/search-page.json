@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_pages_search_pages",
+  "info": {
+    "displayName": "searchPage",
+    "icon": "file",
+    "description": "Page template"
+  },
+  "options": {},
+  "attributes": {
+    "hero": {
+      "type": "json"
+    },
+    "hideBreadcrumbs": {
+      "type": "boolean"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo"
+    }
+  }
+}

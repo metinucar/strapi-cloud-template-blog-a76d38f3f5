@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_navigation_header_sub_navigation_items",
+  "info": {
+    "displayName": "Item",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "link": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_downloads_downloads_expandable_items",
+  "info": {
+    "displayName": "Item",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "blocks"
+    },
+    "listTitle": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "component": "downloads.downloads-link-item",
+      "repeatable": true
+    }
+  }
+}

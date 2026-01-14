@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_data_misc_sections",
+  "info": {
+    "displayName": "miscSection",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "year": {
+      "type": "string"
+    },
+    "features": {
+      "type": "component",
+      "component": "data.misc-table-item",
+      "repeatable": true
+    }
+  }
+}

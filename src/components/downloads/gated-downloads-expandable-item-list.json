@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_downloads_gated_downloads_expandable_item_lists",
+  "info": {
+    "displayName": "gatedDownloadsExpandableItemList",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "component": "downloads.gated-downloads-expandable-item",
+      "repeatable": true
+    }
+  }
+}

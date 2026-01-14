@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_data_comparison_table_headers",
+  "info": {
+    "displayName": "Header",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "columns": {
+      "type": "component",
+      "component": "data.comparison-table-header-colum",
+      "repeatable": true
+    }
+  }
+}

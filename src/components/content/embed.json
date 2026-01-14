@@ -1,0 +1,76 @@
+{
+  "collectionName": "components_content_embeds",
+  "info": {
+    "displayName": "embed",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "spacing": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "onlyTop",
+        "onlyBottom",
+        "both"
+      ],
+      "default": "both"
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "white",
+        "gray",
+        "signature",
+        "black",
+        "blue",
+        "frostBlue",
+        "oceanBlue",
+        "peach",
+        "violet",
+        "gradientRadialTopBlueSignature",
+        "gradientRadialCenterBlueSignature",
+        "gradientLinearBlueSignature"
+      ]
+    },
+    "width": {
+      "type": "enumeration",
+      "enum": [
+        "fluid",
+        "wide",
+        "narrow"
+      ],
+      "default": "wide"
+    },
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "blocks"
+    },
+    "height": {
+      "type": "enumeration",
+      "enum": [
+        "400",
+        "500",
+        "600",
+        "700",
+        "800",
+        "900",
+        "1000",
+        "1100",
+        "1200"
+      ],
+      "default": "800"
+    },
+    "asset": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "texts"
+      ]
+    }
+  }
+}

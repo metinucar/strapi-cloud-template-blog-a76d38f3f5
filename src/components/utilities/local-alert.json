@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_utilities_local_alerts",
+  "info": {
+    "displayName": "localAlert",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "red",
+        "black",
+        "signature"
+      ]
+    },
+    "padding": {
+      "type": "enumeration",
+      "enum": [
+        "topAndBottom",
+        "onlyTop",
+        "onlyBottom",
+        "none"
+      ],
+      "default": "topAndBottom"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "button": {
+      "type": "component",
+      "component": "utilities.button",
+      "repeatable": true
+    }
+  }
+}

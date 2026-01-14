@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_navigation_headers",
+  "info": {
+    "displayName": "header",
+    "icon": "cube",
+    "description": "Site header with navigation"
+  },
+  "options": {},
+  "attributes": {
+    "tobiiGroup": {
+      "type": "boolean"
+    },
+    "searchPageLink": {
+      "type": "json"
+    },
+    "headerNavigation": {
+      "type": "component",
+      "component": "navigation.header-navigation-item",
+      "repeatable": true
+    }
+  }
+}

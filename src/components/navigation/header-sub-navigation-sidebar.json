@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_navigation_header_sub_navigation_sidebars",
+  "info": {
+    "displayName": "Items",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "component": "navigation.header-sub-navigation-item",
+      "repeatable": true
+    }
+  }
+}

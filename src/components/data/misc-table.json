@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_data_misc_tables",
+  "info": {
+    "displayName": "miscTable",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "sections": {
+      "type": "component",
+      "component": "data.misc-section",
+      "repeatable": true
+    },
+    "spacing": {
+      "type": "enumeration",
+      "enum": [
+        "onlyTop",
+        "onlyBottom",
+        "both",
+        "none"
+      ],
+      "default": "both"
+    }
+  }
+}

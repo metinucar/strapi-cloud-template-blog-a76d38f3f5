@@ -1,0 +1,54 @@
+{
+  "collectionName": "components_finders_event_finder_pages",
+  "info": {
+    "displayName": "eventFinderPage",
+    "icon": "file",
+    "description": "Page template"
+  },
+  "options": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "component": "heroes.hero-small",
+      "repeatable": true
+    },
+    "featuredEvent": {
+      "type": "string"
+    },
+    "noHeroOverlay": {
+      "type": "boolean"
+    },
+    "body": {
+      "type": "json"
+    },
+    "activateSearchField": {
+      "type": "boolean"
+    },
+    "hideBreadcrumbs": {
+      "type": "boolean"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "hideStickyMenu": {
+      "type": "boolean"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo"
+    }
+  }
+}

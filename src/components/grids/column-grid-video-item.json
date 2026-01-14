@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_grids_column_grid_video_items",
+  "info": {
+    "displayName": "Video",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "video": {
+      "type": "json"
+    },
+    "title": {
+      "type": "string"
+    },
+    "markdown": {
+      "type": "blocks"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "buttonLink": {
+      "type": "json"
+    },
+    "secondButtonText": {
+      "type": "string"
+    },
+    "secondButtonLink": {
+      "type": "json"
+    }
+  }
+}

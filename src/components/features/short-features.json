@@ -1,0 +1,122 @@
+{
+  "collectionName": "components_features_short_featuress",
+  "info": {
+    "displayName": "shortFeatures",
+    "icon": "cube",
+    "description": "Grid of feature highlights"
+  },
+  "options": {},
+  "attributes": {
+    "contentAlignment": {
+      "type": "enumeration",
+      "enum": [
+        "alignLeft",
+        "alignCenter",
+        "alignRight"
+      ],
+      "default": "alignCenter"
+    },
+    "spacing": {
+      "type": "enumeration",
+      "enum": [
+        "onlyTop",
+        "onlyBottom",
+        "both",
+        "none"
+      ]
+    },
+    "outerSpacing": {
+      "type": "enumeration",
+      "enum": [
+        "outerOnlyTop",
+        "outerOnlyBottom",
+        "outerBoth",
+        "outerNone"
+      ]
+    },
+    "width": {
+      "type": "enumeration",
+      "enum": [
+        "fluid",
+        "xxWide",
+        "xWide"
+      ]
+    },
+    "columns": {
+      "type": "enumeration",
+      "enum": [
+        "two",
+        "three",
+        "four",
+        "five",
+        "six"
+      ],
+      "default": "four"
+    },
+    "featureBoxed": {
+      "type": "boolean"
+    },
+    "featureStyle": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "white",
+        "gray",
+        "signature",
+        "black",
+        "blue",
+        "frostBlue",
+        "oceanBlue",
+        "peach",
+        "violet",
+        "gradientRadialTopBlueSignature",
+        "gradientRadialCenterBlueSignature",
+        "gradientLinearBlueSignature"
+      ]
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "white",
+        "gray",
+        "signature",
+        "black",
+        "blue",
+        "frostBlue",
+        "oceanBlue",
+        "peach",
+        "violet",
+        "gradientRadialTopBlueSignature",
+        "gradientRadialCenterBlueSignature",
+        "gradientLinearBlueSignature"
+      ]
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "backgroundOpacity": {
+      "type": "json"
+    },
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "blocks"
+    },
+    "buttons": {
+      "type": "component",
+      "component": "utilities.button",
+      "repeatable": true
+    },
+    "features": {
+      "type": "component",
+      "component": "features.short-features-feature",
+      "repeatable": true
+    }
+  }
+}

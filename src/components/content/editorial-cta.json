@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_content_editorial_ctas",
+  "info": {
+    "displayName": "editorialCta",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "blocks"
+    },
+    "spacing": {
+      "type": "enumeration",
+      "enum": [
+        "onlyTop",
+        "onlyBottom",
+        "both",
+        "none"
+      ],
+      "default": "both"
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "gray",
+        "signature",
+        "black"
+      ],
+      "default": "signature"
+    },
+    "buttons": {
+      "type": "component",
+      "component": "utilities.button",
+      "repeatable": true
+    }
+  }
+}

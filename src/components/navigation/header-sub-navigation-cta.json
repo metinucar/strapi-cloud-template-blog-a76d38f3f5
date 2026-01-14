@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_navigation_header_sub_navigation_ctas",
+  "info": {
+    "displayName": "CTA",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "link": {
+      "type": "json"
+    }
+  }
+}

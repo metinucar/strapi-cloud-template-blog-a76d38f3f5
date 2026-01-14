@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_data_tech_spec_sections",
+  "info": {
+    "displayName": "Section",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "tableData": {
+      "type": "json"
+    },
+    "boldColumns": {
+      "type": "json"
+    },
+    "featuresLeft": {
+      "type": "component",
+      "component": "data.tech-spec-item",
+      "repeatable": true
+    },
+    "featuresRight": {
+      "type": "component",
+      "component": "data.tech-spec-item",
+      "repeatable": true
+    },
+    "footnotes": {
+      "type": "component",
+      "component": "data.tech-spec-footnote",
+      "repeatable": true
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "collectionName": "components_heroes_hero_smalls",
+  "info": {
+    "displayName": "heroSmall",
+    "icon": "cube",
+    "description": "Compact hero banner"
+  },
+  "options": {},
+  "attributes": {
+    "noOverlay": {
+      "type": "boolean"
+    },
+    "inverted": {
+      "type": "boolean"
+    },
+    "overlayStyle": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "white",
+        "gray",
+        "signature",
+        "black",
+        "blue",
+        "frostBlue",
+        "oceanBlue",
+        "peach",
+        "violet",
+        "gradientRadialTopBlueSignature",
+        "gradientRadialCenterBlueSignature",
+        "gradientLinearBlueSignature"
+      ]
+    },
+    "overlayOpacity": {
+      "type": "json"
+    },
+    "label": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "buttons": {
+      "type": "component",
+      "component": "utilities.button",
+      "repeatable": true
+    }
+  }
+}

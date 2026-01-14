@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_grids_tabs_grids",
+  "info": {
+    "displayName": "Tabs",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "buttons": {
+      "type": "component",
+      "component": "utilities.button",
+      "repeatable": true
+    },
+    "tabs": {
+      "type": "component",
+      "component": "grids.tabs-grid-tab-item",
+      "repeatable": true
+    },
+    "width": {
+      "type": "enumeration",
+      "enum": [
+        "fluid",
+        "xxWide",
+        "xWide"
+      ]
+    },
+    "outerSpacing": {
+      "type": "enumeration",
+      "enum": [
+        "outerOnlyTop",
+        "outerOnlyBottom",
+        "outerBoth",
+        "outerNone"
+      ]
+    }
+  }
+}

@@ -1,0 +1,297 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page",
+    "description": "Main content pages for Tobii websites"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "fullSlug": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "site": {
+      "type": "enumeration",
+      "enum": [
+        "main",
+        "investor"
+      ],
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "pageType": {
+      "type": "enumeration",
+      "enum": [
+        "generic",
+        "home",
+        "product",
+        "product_category",
+        "product_finder",
+        "solution",
+        "article",
+        "article_finder",
+        "resource",
+        "resource_finder",
+        "event",
+        "event_finder",
+        "landing",
+        "legal",
+        "about",
+        "contact",
+        "investor",
+        "press_release",
+        "press_release_finder",
+        "financial_report_finder",
+        "search",
+        "four_oh_four"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "lists.publication-card",
+        "pages.scientific-publications-page",
+        "features.customer-cases",
+        "features.customer-cases-item",
+        "features.sticky-media-scroll",
+        "features.sticky-media-scroll-step",
+        "utilities.google-maps",
+        "utilities.google-maps-location",
+        "cta.cta-block",
+        "navigation.header",
+        "navigation.footer",
+        "pages.global",
+        "heroes.hero",
+        "pages.product-page",
+        "pages.simple-content-page",
+        "pages.start-page",
+        "content.text-and-image",
+        "content.markdown",
+        "data.tech-spec",
+        "data.tech-spec-section",
+        "data.tech-spec-item",
+        "data.tech-spec-footnote",
+        "content.editorial",
+        "content.editorial-quote",
+        "content.editorial-image",
+        "content.editorial-video",
+        "features.short-features",
+        "features.short-features-feature",
+        "content.editorial-markdown",
+        "navigation.footer-social-media-item",
+        "navigation.link",
+        "utilities.button",
+        "heroes.hero-small",
+        "grids.column-grid-image-item",
+        "grids.column-grid-video-item",
+        "grids.column-grid",
+        "downloads.downloads-link-item",
+        "downloads.downloads-expandable-item",
+        "downloads.downloads",
+        "downloads.downloads-link-item-list",
+        "downloads.downloads-expandable-item-list",
+        "pages.solutions-page",
+        "cta.cta-form",
+        "people.speakers-speaker",
+        "people.speakers",
+        "pages.event-page",
+        "events.detail",
+        "events.agenda-item",
+        "lists.tag",
+        "lists.tag-list",
+        "utilities.share-item",
+        "people.contact",
+        "content.editorial-without-spacing",
+        "downloads.document",
+        "navigation.header-nav-item",
+        "navigation.header-sub-nav-group",
+        "navigation.header-cta",
+        "pages.root",
+        "media.video",
+        "pages.search-page",
+        "media.youtube-video",
+        "media.twenty-three-video",
+        "pages.pressrelease-page",
+        "content.text-and-video",
+        "media.youtube-video-without-description",
+        "media.twenty-three-video-without-description",
+        "grids.content-grid-slider",
+        "grids.column-grid-text-item",
+        "grids.column-grid-text-only",
+        "media.video-player",
+        "content.preamble",
+        "utilities.page-section-divider",
+        "pages.article-page",
+        "people.author",
+        "people.author-role",
+        "content.editorial-image-keep-proportions",
+        "pages.resource-page",
+        "features.testimonial",
+        "features.testimonials",
+        "heroes.hero-video",
+        "heroes.hero-video-small",
+        "cta.cta-button",
+        "finders.product-finder-page",
+        "events.event-calendar",
+        "features.logo",
+        "features.logo-list",
+        "cta.gated-form",
+        "heroes.hero-startpage",
+        "cta.startpage-cta",
+        "downloads.downloads-gated-download-item",
+        "downloads.downloads-gated-download-form",
+        "pages.product-category-page",
+        "lists.press-releases-list",
+        "lists.reports-list",
+        "downloads.gated-downloads",
+        "finders.pressrelease-finder-page",
+        "pages.imagevault-gallery-page",
+        "finders.resource-finder-page",
+        "downloads.gated-downloads-list",
+        "downloads.gated-downloads-expandable-item-list",
+        "downloads.gated-downloads-expandable-item",
+        "pages.corporate-start-page",
+        "finders.event-finder-page",
+        "utilities.local-alert",
+        "utilities.global-alert",
+        "finders.investor-event-finder-page",
+        "finders.article-finder-page",
+        "pages.main-event-page",
+        "finders.financial-report-finder-page",
+        "cta.cta-modal",
+        "pages.investor-search-page",
+        "pages.landing-page",
+        "utilities.product",
+        "finders.article-finder-page-v2",
+        "content.dual-media-block",
+        "content.editorial-cta",
+        "utilities.article-footer",
+        "pages.blank",
+        "pages.global1",
+        "grids.column-grid",
+        "content.section",
+        "data.financial-reports-item",
+        "data.financial-reports-table",
+        "data.financial-report-section",
+        "data.misc-table-item",
+        "data.misc-section",
+        "data.misc-table",
+        "content.embed",
+        "pages.publication-page",
+        "media.slider",
+        "media.slide-item-image",
+        "media.slide-item-video",
+        "people.speaker",
+        "media.image-carousel",
+        "media.carousel-item-image",
+        "media.carousel-item-video",
+        "media.video-carousel",
+        "content.block-intro",
+        "content.overlay-block",
+        "data.accordion-block",
+        "data.accordion-item",
+        "pages.four-oh-four",
+        "navigation.header-navigation-item",
+        "navigation.header-sub-navigation-panel",
+        "navigation.header-sub-navigation-tab",
+        "navigation.header-sub-navigation-cta",
+        "navigation.header-sub-navigation-group",
+        "navigation.header-sub-navigation-item",
+        "navigation.header-sub-navigation-sidebar",
+        "navigation.header-navigation",
+        "navigation.header-sub-navigation-tab-item",
+        "navigation.header-sub-navigation-panel-item",
+        "grids.tabs-grid",
+        "grids.tabs-grid-tab-item",
+        "grids.tabs-grid-block-item",
+        "navigation.header-sub-navigation-dropdown-copy",
+        "data.datablock",
+        "pages.pressrelease-single-page",
+        "people.contacts",
+        "grids.interactive-grid",
+        "grids.interactive-grid-item",
+        "pages.disclaimer-content-page",
+        "media.image-wrapper",
+        "media.stacking-slider-item",
+        "media.stack-carousel",
+        "features.related-content",
+        "media.asset-video",
+        "media.hotspots",
+        "media.hotspot-item",
+        "features.segments",
+        "features.segments-item",
+        "features.segmest-item-list-item",
+        "data.comparison-table",
+        "data.comparison-table-row",
+        "data.comparison-table-row-colum",
+        "data.comparison-table-header",
+        "data.comparison-table-header-colum",
+        "data.comparison-table-section",
+        "data.comparison-table-row-feature"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "storyblokUuid": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "storyblokGroupId": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_utilities_article_footers",
+  "info": {
+    "displayName": "articleFooter",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {}
+}

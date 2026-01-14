@@ -1,0 +1,54 @@
+{
+  "collectionName": "components_pages_scientific_publications_pages",
+  "info": {
+    "displayName": "Scientific Publications",
+    "icon": "file",
+    "description": "Page template"
+  },
+  "options": {},
+  "attributes": {
+    "heroTitle": {
+      "type": "string"
+    },
+    "heroDescription": {
+      "type": "blocks"
+    },
+    "publications": {
+      "type": "component",
+      "component": "lists.publication-card",
+      "repeatable": true
+    },
+    "resourceType": {
+      "type": "json"
+    },
+    "solutions": {
+      "type": "json"
+    },
+    "products": {
+      "type": "json"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "footer": {
+      "type": "json"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo"
+    }
+  }
+}

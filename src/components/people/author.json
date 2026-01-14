@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_people_authors",
+  "info": {
+    "displayName": "author",
+    "icon": "file",
+    "description": "Page template"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "rolesAndCompany": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "facebookLink": {
+      "type": "json"
+    },
+    "linkedinLink": {
+      "type": "json"
+    },
+    "twitterLink": {
+      "type": "json"
+    },
+    "link": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "collectionName": "components_cta_gated_forms",
+  "info": {
+    "displayName": "gatedForm",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "spacing": {
+      "type": "enumeration",
+      "enum": [
+        "onlyTop",
+        "onlyBottom",
+        "both",
+        "none"
+      ]
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "white",
+        "gray",
+        "signature",
+        "black",
+        "blue",
+        "frostBlue",
+        "oceanBlue",
+        "peach",
+        "violet",
+        "gradientRadialTopBlueSignature",
+        "gradientRadialCenterBlueSignature",
+        "gradientLinearBlueSignature"
+      ]
+    },
+    "divider": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "swooshBlueTop",
+        "swooshBlueBottom",
+        "swooshBlueBoth"
+      ],
+      "default": "none"
+    },
+    "text": {
+      "type": "blocks"
+    },
+    "copy": {
+      "type": "blocks"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "formUrl": {
+      "type": "string"
+    },
+    "block": {
+      "type": "json"
+    }
+  }
+}

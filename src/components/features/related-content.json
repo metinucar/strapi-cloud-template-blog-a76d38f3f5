@@ -1,0 +1,81 @@
+{
+  "collectionName": "components_features_related_contents",
+  "info": {
+    "displayName": "relatedContent",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "white",
+        "gray",
+        "signature",
+        "black",
+        "blue",
+        "frostBlue",
+        "oceanBlue",
+        "peach",
+        "violet",
+        "gradientRadialTopBlueSignature",
+        "gradientRadialCenterBlueSignature",
+        "gradientLinearBlueSignature"
+      ]
+    },
+    "innerSpacing": {
+      "type": "enumeration",
+      "enum": [
+        "onlyTop",
+        "onlyBottom",
+        "both",
+        "none"
+      ]
+    },
+    "outerSpacing": {
+      "type": "enumeration",
+      "enum": [
+        "outerOnlyTop",
+        "outerOnlyBottom",
+        "outerBoth",
+        "outerNone"
+      ]
+    },
+    "contentType": {
+      "type": "json"
+    },
+    "products": {
+      "type": "json"
+    },
+    "solutions": {
+      "type": "json"
+    },
+    "contentLayout": {
+      "type": "enumeration",
+      "enum": [
+        "grid",
+        "gridCompact",
+        "gridSlim",
+        "masonry",
+        "slider"
+      ],
+      "default": "grid"
+    },
+    "storiesCount": {
+      "type": "json"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "buttons": {
+      "type": "component",
+      "component": "utilities.button",
+      "repeatable": true
+    }
+  }
+}

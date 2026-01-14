@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_utilities_google_maps_locations",
+  "info": {
+    "displayName": "Location",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "addressDetails": {
+      "type": "blocks"
+    },
+    "latitude": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "string"
+    }
+  }
+}

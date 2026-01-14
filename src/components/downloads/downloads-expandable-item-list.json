@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_downloads_downloads_expandable_item_lists",
+  "info": {
+    "displayName": "List",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "component": "downloads.downloads-expandable-item",
+      "repeatable": true
+    }
+  }
+}

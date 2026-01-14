@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_grids_column_grids",
+  "info": {
+    "displayName": "column grid",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {}
+}

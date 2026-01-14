@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_media_stacking_slider_items",
+  "info": {
+    "displayName": "StackingSliderItem",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "gray",
+        "signature",
+        "black",
+        "blue"
+      ],
+      "default": "white"
+    },
+    "overlayStyle": {
+      "type": "enumeration",
+      "enum": [
+        "gradient",
+        "peanut",
+        "peanutInverted"
+      ],
+      "default": "peanut"
+    },
+    "textAndImage": {
+      "type": "component",
+      "component": "content.text-and-image",
+      "repeatable": true
+    }
+  }
+}

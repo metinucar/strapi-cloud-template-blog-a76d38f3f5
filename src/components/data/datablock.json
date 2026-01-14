@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_data_datablocks",
+  "info": {
+    "displayName": "Datablock",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "widgets": {
+      "type": "enumeration",
+      "enum": [
+        "archive",
+        "financialCalendar",
+        "insidersTransactions",
+        "investorGrid",
+        "keyFiguresPerformanceMetrics",
+        "keyFiguresSegments",
+        "keyFiguresOverview",
+        "keyFiguresQuarter",
+        "sharegraph",
+        "shareholders",
+        "stockTable",
+        "subscription"
+      ],
+      "default": "sharesholders"
+    },
+    "outerSpacing": {
+      "type": "enumeration",
+      "enum": [
+        "outerOnlyTop",
+        "outerOnlyBottom",
+        "outerBoth",
+        "outerNone"
+      ]
+    }
+  }
+}

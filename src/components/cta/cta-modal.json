@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_cta_cta_modals",
+  "info": {
+    "displayName": "CTA Iframe Modal",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "buttonText": {
+      "type": "string"
+    },
+    "iframeUrl": {
+      "type": "string"
+    },
+    "spacing": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "onlyTop",
+        "onlyBottom",
+        "both"
+      ],
+      "default": "none"
+    }
+  }
+}

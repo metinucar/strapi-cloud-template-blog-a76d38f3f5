@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_features_customer_cases_items",
+  "info": {
+    "displayName": "Case",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "customer": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "logotype": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "quote": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "button": {
+      "type": "component",
+      "component": "utilities.button",
+      "repeatable": true
+    },
+    "contentVisibility": {
+      "type": "enumeration",
+      "enum": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "default": "option_2"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "collectionName": "components_cta_cta_forms",
+  "info": {
+    "displayName": "ctaForm",
+    "icon": "cube",
+    "description": "Form-based call-to-action"
+  },
+  "options": {},
+  "attributes": {
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "white",
+        "gray",
+        "signature",
+        "black",
+        "blue",
+        "frostBlue",
+        "oceanBlue",
+        "peach",
+        "violet",
+        "gradientRadialTopBlueSignature",
+        "gradientRadialCenterBlueSignature",
+        "gradientLinearBlueSignature"
+      ]
+    },
+    "spacing": {
+      "type": "enumeration",
+      "enum": [
+        "onlyTop",
+        "onlyBottom",
+        "both",
+        "none"
+      ],
+      "default": "both"
+    },
+    "divider": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "swooshBlueTop",
+        "swooshBlueBottom",
+        "swooshBlueBoth"
+      ],
+      "default": "none"
+    },
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "blocks"
+    },
+    "copy": {
+      "type": "blocks"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "formUrl": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_pages_global1s",
+  "info": {
+    "displayName": "global1",
+    "icon": "file",
+    "description": "Page template"
+  },
+  "options": {},
+  "attributes": {
+    "global1": {
+      "type": "json"
+    }
+  }
+}

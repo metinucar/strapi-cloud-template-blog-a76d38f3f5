@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_data_comparison_table_row_features",
+  "info": {
+    "displayName": "Feature",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

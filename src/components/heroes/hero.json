@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_heroes_heros",
+  "info": {
+    "displayName": "hero",
+    "icon": "cube",
+    "description": "Hero banner with background image and call-to-action"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "copy": {
+      "type": "blocks"
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "buttons": {
+      "type": "component",
+      "component": "utilities.button",
+      "repeatable": true
+    },
+    "noOverlay": {
+      "type": "boolean"
+    },
+    "inverted": {
+      "type": "boolean"
+    }
+  }
+}

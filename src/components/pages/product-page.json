@@ -1,0 +1,54 @@
+{
+  "collectionName": "components_pages_product_pages",
+  "info": {
+    "displayName": "Product Page",
+    "icon": "file",
+    "description": "Product detail page template"
+  },
+  "options": {},
+  "attributes": {
+    "anchorMenuButton": {
+      "type": "component",
+      "component": "cta.cta-button",
+      "repeatable": true
+    },
+    "hideBreadcrumbs": {
+      "type": "boolean"
+    },
+    "hero": {
+      "type": "json"
+    },
+    "body": {
+      "type": "json"
+    },
+    "categories": {
+      "type": "json"
+    },
+    "solutions": {
+      "type": "json"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "hideStickyMenu": {
+      "type": "boolean"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo"
+    }
+  }
+}

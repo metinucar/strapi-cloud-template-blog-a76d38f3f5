@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_content_editorial_videos",
+  "info": {
+    "displayName": "editorialVideo",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "video": {
+      "type": "json"
+    }
+  }
+}

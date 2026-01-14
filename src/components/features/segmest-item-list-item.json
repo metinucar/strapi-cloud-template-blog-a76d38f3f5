@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_features_segmest_item_list_items",
+  "info": {
+    "displayName": "Feature",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    }
+  }
+}

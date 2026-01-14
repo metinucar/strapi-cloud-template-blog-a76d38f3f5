@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_heroes_hero_videos",
+  "info": {
+    "displayName": "heroVideo",
+    "icon": "cube",
+    "description": "Hero banner with video background"
+  },
+  "options": {},
+  "attributes": {
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "videoThumbnail": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "label": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "copy": {
+      "type": "blocks"
+    },
+    "buttons": {
+      "type": "component",
+      "component": "utilities.button",
+      "repeatable": true
+    },
+    "noOverlay": {
+      "type": "boolean"
+    },
+    "inverted": {
+      "type": "boolean"
+    }
+  }
+}

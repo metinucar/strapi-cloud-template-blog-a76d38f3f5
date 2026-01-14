@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_navigation_links",
+  "info": {
+    "displayName": "link",
+    "icon": "cube",
+    "description": "Content block"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "link": {
+      "type": "json"
+    }
+  }
+}
