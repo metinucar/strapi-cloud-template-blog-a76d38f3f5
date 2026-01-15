@@ -1,0 +1,113 @@
+{
+  "kind": "singleType",
+  "collectionName": "globals",
+  "info": {
+    "singularName": "global",
+    "pluralName": "globals",
+    "displayName": "Global Settings",
+    "description": "Site-wide configuration including tracking, navigation, and filter pages"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "googleTagManagerId": {
+      "type": "string"
+    },
+    "pardotTrackingID": {
+      "type": "string"
+    },
+    "baiduTrackingIDOne": {
+      "type": "string"
+    },
+    "baiduTrackingIDTwo": {
+      "type": "string"
+    },
+    "hellobarID": {
+      "type": "string"
+    },
+    "convertExperiencesID": {
+      "type": "string"
+    },
+    "headHtml": {
+      "type": "text"
+    },
+    "googleSiteVerificationID": {
+      "type": "string"
+    },
+    "bingSiteVerificationID": {
+      "type": "string"
+    },
+    "facebookSiteVerificationID": {
+      "type": "string"
+    },
+    "baiduSiteVerificationID": {
+      "type": "string"
+    },
+    "header": {
+      "type": "component",
+      "component": "navigation.header",
+      "repeatable": true
+    },
+    "headerCTA": {
+      "type": "component",
+      "component": "navigation.link",
+      "repeatable": true
+    },
+    "footer": {
+      "type": "component",
+      "component": "navigation.footer",
+      "repeatable": true
+    },
+    "utilityBar": {
+      "type": "component",
+      "component": "navigation.link",
+      "repeatable": true
+    },
+    "globalAlert": {
+      "type": "component",
+      "component": "utilities.global-alert",
+      "repeatable": true
+    },
+    "notFoundPage": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::not-found-page.not-found-page"
+    },
+    "investorEventFilterPage": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    },
+    "financialReportFilterPage": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    },
+    "pressreleaseFilterPage": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    },
+    "mainEventFilterPage": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    },
+    "mainResourceFilterPage": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    },
+    "customerCasesFilterPage": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    },
+    "mainBlogFilterPage": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    }
+  }
+}

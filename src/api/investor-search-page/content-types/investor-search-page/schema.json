@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "investor_search_pages",
+  "info": {
+    "singularName": "investor-search-page",
+    "pluralName": "investor-search-pages",
+    "displayName": "Investor Search Page",
+    "description": "Investor site search page configuration"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "hero": {
+      "type": "json",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "hideBreadcrumbs": {
+      "type": "boolean",
+      "default": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}
