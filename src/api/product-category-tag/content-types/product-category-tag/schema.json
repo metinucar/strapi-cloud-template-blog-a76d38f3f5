@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_category_tags",
+  "info": {
+    "singularName": "product-category-tag",
+    "pluralName": "product-category-tags",
+    "displayName": "Product Category Tag",
+    "description": "Product category tags for filtering articles"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    }
+  }
+}

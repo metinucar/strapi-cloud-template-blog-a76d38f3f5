@@ -18,12 +18,12 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "required": true
     },
     "slug": {
       "type": "uid",
@@ -32,22 +32,25 @@
     },
     "fullSlug": {
       "type": "string",
-      "required": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "required": true
     },
     "site": {
       "type": "enumeration",
-      "enum": ["main", "investor"],
-      "required": true,
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
-      }
+      },
+      "required": true,
+      "enum": [
+        "main",
+        "investor"
+      ]
     },
     "description": {
       "type": "text",
@@ -67,32 +70,18 @@
     },
     "featuredImage": {
       "type": "media",
-      "multiple": false,
-      "allowedTypes": ["images"],
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
-      }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "author": {
       "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
-    },
-    "authors": {
-      "type": "json",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
-    },
-    "collaborators": {
-      "type": "json",
       "pluginOptions": {
         "i18n": {
           "localized": false
@@ -116,73 +105,82 @@
       }
     },
     "body": {
-      "type": "json",
+      "type": "dynamiczone",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "components": [
+        "content.editorial",
+        "content.editorial-markdown",
+        "content.editorial-image",
+        "content.editorial-image-keep-proportions",
+        "content.editorial-quote",
+        "cta.cta-block"
+      ]
     },
     "contentGrid": {
       "type": "component",
       "component": "grids.content-grid-slider",
-      "repeatable": true
+      "repeatable": false
     },
     "ctaForm": {
       "type": "component",
       "component": "cta.cta-form",
-      "repeatable": true
+      "repeatable": false
     },
-    "tagsProductCategories": {
-      "type": "json",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
+    "authors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::author.author"
     },
-    "tagsSolutions": {
-      "type": "json",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
+    "collaborators": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::author.author"
     },
-    "otherTags": {
-      "type": "json",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
+    "productCategoryTags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product-category-tag.product-category-tag"
     },
-    "hideBreadcrumbs": {
-      "type": "boolean",
-      "default": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
+    "solutionTags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::solution-tag.solution-tag"
     },
-    "hideStickyMenu": {
-      "type": "boolean",
-      "default": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag"
     },
     "seo": {
       "type": "component",
-      "component": "shared.seo",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "component": "shared.seo"
+    },
+    "hideBreadcrumbs": {
+      "type": "boolean",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": false
+    },
+    "hideStickyMenu": {
+      "type": "boolean",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": false
     },
     "storyblokUuid": {
       "type": "string",

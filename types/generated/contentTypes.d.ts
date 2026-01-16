@@ -453,13 +453,17 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
           localized: false;
         };
       }>;
-    authors: Schema.Attribute.JSON &
-      Schema.Attribute.SetPluginOptions<{
-        i18n: {
-          localized: false;
-        };
-      }>;
-    body: Schema.Attribute.JSON &
+    authors: Schema.Attribute.Relation<'manyToMany', 'api::author.author'>;
+    body: Schema.Attribute.DynamicZone<
+      [
+        'content.editorial',
+        'content.editorial-markdown',
+        'content.editorial-image',
+        'content.editorial-image-keep-proportions',
+        'content.editorial-quote',
+        'cta.cta-block',
+      ]
+    > &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -471,17 +475,15 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
           localized: false;
         };
       }>;
-    collaborators: Schema.Attribute.JSON &
-      Schema.Attribute.SetPluginOptions<{
-        i18n: {
-          localized: false;
-        };
-      }>;
-    contentGrid: Schema.Attribute.Component<'grids.content-grid-slider', true>;
+    collaborators: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::author.author'
+    >;
+    contentGrid: Schema.Attribute.Component<'grids.content-grid-slider', false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    ctaForm: Schema.Attribute.Component<'cta.cta-form', true>;
+    ctaForm: Schema.Attribute.Component<'cta.cta-form', false>;
     description: Schema.Attribute.Text &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -520,12 +522,10 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
       'oneToMany',
       'api::article.article'
     >;
-    otherTags: Schema.Attribute.JSON &
-      Schema.Attribute.SetPluginOptions<{
-        i18n: {
-          localized: false;
-        };
-      }>;
+    productCategoryTags: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::product-category-tag.product-category-tag'
+    >;
     publishedAt: Schema.Attribute.DateTime;
     publishedDate: Schema.Attribute.DateTime &
       Schema.Attribute.SetPluginOptions<{
@@ -553,24 +553,17 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
         };
       }>;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
+    solutionTags: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::solution-tag.solution-tag'
+    >;
     storyblokUuid: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
       }>;
-    tagsProductCategories: Schema.Attribute.JSON &
-      Schema.Attribute.SetPluginOptions<{
-        i18n: {
-          localized: false;
-        };
-      }>;
-    tagsSolutions: Schema.Attribute.JSON &
-      Schema.Attribute.SetPluginOptions<{
-        i18n: {
-          localized: false;
-        };
-      }>;
+    tags: Schema.Attribute.Relation<'manyToMany', 'api::tag.tag'>;
     title: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
@@ -578,6 +571,44 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiAuthorAuthor extends Struct.CollectionTypeSchema {
+  collectionName: 'authors';
+  info: {
+    description: 'Blog article authors and contributors';
+    displayName: 'Author';
+    pluralName: 'authors';
+    singularName: 'author';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text;
+    facebookLink: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
+    link: Schema.Attribute.String;
+    linkedinLink: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::author.author'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    rolesAndCompany: Schema.Attribute.String;
+    slug: Schema.Attribute.UID<'name'> & Schema.Attribute.Required;
+    storyblokUuid: Schema.Attribute.String;
+    twitterLink: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1947,6 +1978,37 @@ export interface ApiPressReleasePressRelease
   };
 }
 
+export interface ApiProductCategoryTagProductCategoryTag
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'product_category_tags';
+  info: {
+    description: 'Product category tags for filtering articles';
+    displayName: 'Product Category Tag';
+    pluralName: 'product-category-tags';
+    singularName: 'product-category-tag';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::product-category-tag.product-category-tag'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.UID<'name'> & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiProductCategoryProductCategory
   extends Struct.CollectionTypeSchema {
   collectionName: 'product_categories';
@@ -2764,6 +2826,36 @@ export interface ApiSimplePageSimplePage extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiSolutionTagSolutionTag extends Struct.CollectionTypeSchema {
+  collectionName: 'solution_tags';
+  info: {
+    description: 'Solution tags for filtering articles';
+    displayName: 'Solution Tag';
+    pluralName: 'solution-tags';
+    singularName: 'solution-tag';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::solution-tag.solution-tag'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.UID<'name'> & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiSolutionSolution extends Struct.CollectionTypeSchema {
   collectionName: 'solutions';
   info: {
@@ -2875,6 +2967,33 @@ export interface ApiSolutionSolution extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiTagTag extends Struct.CollectionTypeSchema {
+  collectionName: 'tags';
+  info: {
+    description: 'General purpose tags for content';
+    displayName: 'Tag';
+    pluralName: 'tags';
+    singularName: 'tag';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::tag.tag'> &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.UID<'name'> & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -3392,6 +3511,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::article.article': ApiArticleArticle;
+      'api::author.author': ApiAuthorAuthor;
       'api::disclaimer-page.disclaimer-page': ApiDisclaimerPageDisclaimerPage;
       'api::event.event': ApiEventEvent;
       'api::gallery-page.gallery-page': ApiGalleryPageGalleryPage;
@@ -3403,6 +3523,7 @@ declare module '@strapi/strapi' {
       'api::not-found-page.not-found-page': ApiNotFoundPageNotFoundPage;
       'api::page.page': ApiPagePage;
       'api::press-release.press-release': ApiPressReleasePressRelease;
+      'api::product-category-tag.product-category-tag': ApiProductCategoryTagProductCategoryTag;
       'api::product-category.product-category': ApiProductCategoryProductCategory;
       'api::product.product': ApiProductProduct;
       'api::publication-page.publication-page': ApiPublicationPagePublicationPage;
@@ -3410,7 +3531,9 @@ declare module '@strapi/strapi' {
       'api::scientific-publication.scientific-publication': ApiScientificPublicationScientificPublication;
       'api::search-page.search-page': ApiSearchPageSearchPage;
       'api::simple-page.simple-page': ApiSimplePageSimplePage;
+      'api::solution-tag.solution-tag': ApiSolutionTagSolutionTag;
       'api::solution.solution': ApiSolutionSolution;
+      'api::tag.tag': ApiTagTag;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

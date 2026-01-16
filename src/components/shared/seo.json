@@ -31,9 +31,6 @@
     "noFollow": {
       "type": "boolean",
       "default": false
-    },
-    "structuredData": {
-      "type": "json"
     }
   }
 }

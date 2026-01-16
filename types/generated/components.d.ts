@@ -3350,7 +3350,6 @@ export interface SharedSeo extends Struct.ComponentSchema {
     metaTitle: Schema.Attribute.String;
     noFollow: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     noIndex: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
-    structuredData: Schema.Attribute.JSON;
   };
 }
 

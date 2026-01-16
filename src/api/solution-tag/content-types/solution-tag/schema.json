@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "solution_tags",
+  "info": {
+    "singularName": "solution-tag",
+    "pluralName": "solution-tags",
+    "displayName": "Solution Tag",
+    "description": "Solution tags for filtering articles"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    }
+  }
+}
